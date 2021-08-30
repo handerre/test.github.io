@@ -1,0 +1,314 @@
+ 
+ /* CSS Document */
+/* sørger for at vi kan bruke æ. ø og å */
+ @charset "UTF-8";
+
+/* Definerer body taggen*/
+body{
+    color: black;
+	font-family: "Lucida Sans", sans-serif;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+}
+
+/*Tagg for definisjon av nedtelling til sommerferien*/
+#nedtelling{
+	grid-column: 1/6;
+	margin-top: 10px;
+	font-size: 14px;
+	
+	margin-right: 5px;	
+}
+
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+.main {
+	display: grid; /* Definerer at sidene skal vises med grids*/
+	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
+	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
+	text-align: center; /* all teks skal midtstilles som standard*/
+	grid-template-columns: repeat(5, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
+	grid-template-rows: minmax(50px, auto) ; /* deler skjermen i 5 like store deler - horisontalt */
+	grid-auto-columns: minmax(auto, auto);
+}
+
+/* Definerer header taggen/griden*/
+.header {
+	display: grid;
+	grid-column:1/8;
+	border-radius: 25px; /*Avrunnede hjørner */
+	border-style:dotted;
+	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	
+}
+
+/* Definerer meny_topp taggen/griden*/
+.meny_topp{
+	grid-column:1/5;
+    grid-row: span 1;
+    border-style: solid ;
+	text-align: left;
+	font-size: 14px;
+	color: black;
+	padding: 10px;
+	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border-radius: 25px; /*Avrunnede hjørner */
+}
+
+/* Definerer meny_venstre taggen/griden*/
+.meny_venstre{
+	grid-column: 1/1;
+	border-radius: 25px; /*Avrunnede hjørner */
+	font-size: 14px;
+	text-align: left;
+	text-indent: 20px;
+	padding: 10px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	
+}
+
+.panel.body
+{
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border: none;
+}
+.panel-group
+{
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border: none;
+}
+.panel.panel-default {
+ 
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border: none;
+}
+
+.panel-title
+{
+	padding: 5px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border: none;
+}
+
+.panel-heading
+{
+    background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	border: none;
+}
+
+/* Definerer hovedvindu taggen/griden*/
+.hovedvindu{
+	grid-column: 2/6;
+	grid-row: auto;
+	border-radius: 25px; /*Avrunnede hjørner */
+	display: inline-block;
+	min-height: 500px;
+	padding: 15px;
+	margin-bottom: 7px;
+	margin-left: 15px;
+	color:black;
+	text-align: left;
+	/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+	background-repeat:repeat;
+	/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	min-height: 50%;
+	font-size: 16px;
+	}
+	.hv{
+		grid-column: 2/3;
+	    grid-row: auto;
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		border-style:dashed;
+		min-height: 50%;
+		font-size: 16px;
+		}
+	
+	.hv1{
+		grid-column: 3/4;
+		/*grid-row: auto;*/
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		border-style:dotted;
+		min-height: 50%;
+		font-size: 16px;
+		}
+		.hv-1{
+			grid-column: 3/4;
+			position: absolute;
+			border-radius: 25px; /*Avrunnede hjørner */
+			display: inline-block;
+			min-height: 500px;
+			padding: 15px;
+			margin-bottom: 7px;
+			margin-left: 15px;
+			color:black;
+			text-align: left;
+			/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+			min-height: 50%;
+			font-size: 16px;
+			}
+	
+	.hv2{
+		grid-column: 4/5;
+		/*grid-row: auto;*/
+		border-radius: 25px; /*Avrunnede hjørner */
+		display: inline-block;
+		min-height: 500px;
+		padding: 15px;
+		margin-bottom: 7px;
+		margin-left: 15px;
+		color:black;
+		text-align: left;
+		/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+		background-repeat:repeat;
+		/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+		min-height: 50%;
+		font-size: 16px;
+        border-style:groove;
+		}
+		.hv3{
+			grid-column: 5/6;
+			/*grid-row: auto;*/
+			border-radius: 25px; /*Avrunnede hjørner */
+			display: inline-block;
+			min-height: 500px;
+			padding: 15px;
+			margin-bottom: 7px;
+			margin-left: 15px;
+			color:black;
+			text-align: left;
+			/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+			background-repeat:repeat;
+			/*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+			min-height: 50%;
+			font-size: 16px;
+            border-style:solid;
+		}
+		.leare1{
+			grid-column: 2/4;
+			/*grid-row: auto;*/
+			border-radius: 25px; /*Avrunnede hjørner */
+			display: inline-block;
+			min-height: 500px;
+			padding: 15px;
+			margin-bottom: 7px;
+			margin-left: 15px;
+			color:black;
+			text-align: left;
+			/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+			min-height: 50%;
+			font-size: 16px;
+			}	
+
+			.leare2{
+				grid-column: 4/6;
+				/*grid-row: auto;*/
+				border-radius: 25px; /*Avrunnede hjørner */
+				display: inline-block;
+				min-height: 500px;
+				padding: 15px;
+				margin-bottom: 7px;
+				margin-left: 15px;
+				color:black;
+				text-align: left;
+				/*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+				min-height: 50%;
+				font-size: 16px;
+				}	
+
+/* Definerer footer taggen/griden*/
+.footer {
+	width: 100%;
+	border-radius: 25px; /*Avrunnede hjørner */
+	text-align: center;
+	word-spacing: 10px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	bottom: 0;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	margin-left: 1px;
+	z-index: -1; /*Gjør at den havner bak, og ikke foran*/
+    grid-column: span 7;
+	opacity: 0.90;
+	font-size: 10px;
+    grid-row: 9/9;
+    border-style: groove;
+
+}
+embed{
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+	height: 75%;
+	width: 100%;
+	overflow: hidden;
+}
+  /* Definerer liste taggen*/
+  li {
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin: 7px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+	
+  }
+
+/* Definerer nummerert/ordnet liste taggen*/
+  ol {
+	list-style-position: inside;
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin-bottom: 7px;
+	background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+  }
+  
+
+/* Definerer unummerert/uordnet liste taggen*/
+ul {
+	
+	border-radius: 25px; /*Avrunnede hjørner */
+	padding: 5px;
+	margin-bottom: 7px;
+	margin-left: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background-image: linear-gradient(to right, rgb(220, 228, 230), #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+
+  }
+/* unvisited link */
+a:link {
+	color:purple;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+	color: blue;
+  }
+
+
+
