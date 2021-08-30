@@ -25,7 +25,7 @@ body{
 	grid-column-gap: 15px; /* mellomrom mellom gridsene horisontalt*/
 	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
-	
+	grid-template-columns: repeat(5, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
 	grid-template-rows: minmax(50px, auto) ; /* deler skjermen i 5 like store deler - horisontalt */
 	grid-auto-columns: minmax(auto, auto);
 }
