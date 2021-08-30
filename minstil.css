@@ -3,6 +3,27 @@
 /* sørger for at vi kan bruke æ. ø og å */
  @charset "UTF-8";
 
+ @media(max-width: 1200px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+@media(max-width: 900px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media(max-width: 600px){
+    main{
+        grid-template-columns: auto;
+
+    }
+}
+
 /* Definerer body taggen*/
 body{
     color: black;
@@ -26,7 +47,7 @@ body{
 	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
 	grid-template-columns: repeat(5, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
-	grid-template-rows: minmax(50px, auto) ; /* deler skjermen i 5 like store deler - horisontalt */
+	grid-template-rows: minmax(20px, auto) ; /* deler skjermen - horisontalt */
 	grid-auto-columns: minmax(auto, auto);
 }
 
@@ -43,7 +64,8 @@ body{
 /* Definerer meny_topp taggen/griden*/
 .meny_topp{
 	grid-column:1/5;
-    grid-row: span 1;
+	clear: both;
+	/*grid-auto-rows: minmax(20px, auto);*/
     border-style: solid ;
 	text-align: left;
 	font-size: 14px;
@@ -51,6 +73,7 @@ body{
 	padding: 10px;
 	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	border-radius: 25px; /*Avrunnede hjørner */
+	height: auto;
 }
 
 /* Definerer meny_venstre taggen/griden*/
@@ -231,7 +254,7 @@ body{
 
 /* Definerer footer taggen/griden*/
 .footer {
-	width: 100%;
+
 	border-radius: 25px; /*Avrunnede hjørner */
 	text-align: center;
 	word-spacing: 10px;
