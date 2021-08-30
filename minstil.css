@@ -3,26 +3,7 @@
 /* sørger for at vi kan bruke æ. ø og å */
  @charset "UTF-8";
 
- @media(max-width: 1200px){
-    main{
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-}
-
-@media(max-width: 900px){
-    main{
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-}
-
-@media(max-width: 600px){
-    main{
-        grid-template-columns: auto;
-
-    }
-}
+ 
 
 /* Definerer body taggen*/
 body{
@@ -333,5 +314,24 @@ a:link {
 	color: blue;
   }
 
+  @media(max-width: 1200px){
+    main{
+        grid-template-columns: repeat(3, 1fr);
 
+    }
+}
+
+@media(max-width: 900px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media(max-width: 600px){
+    main{
+        grid-template-columns: auto;
+
+    }
+}
 
