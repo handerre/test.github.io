@@ -16,10 +16,12 @@ body{
         body {
           background-color: green;
           display: inline-block;
+          
         }
         img {
           width: 100%;
         }
+        
       }
 
 
@@ -30,7 +32,8 @@ body{
 	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
 	grid-template-columns: repeat(6, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
-  border-style:dotted;
+ 
+  height: 100%;
 }
 /* Definerer header taggen/griden*/
 .header {
@@ -39,7 +42,6 @@ body{
 	border-style:dotted;
 	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   text-align: center;
-  
 }
 
 img {
@@ -78,7 +80,7 @@ img {
   /*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   min-height: 50%;
   font-size: 16px;
-  border-style:groove;
+  border-style:dotted;
   }
 
 
@@ -104,7 +106,7 @@ img {
     grid-column: span 3;
     /*grid-row: auto;*/
     border-radius: 25px; /*Avrunnede hjørner */
-    display: inline-block;
+    display: inline;
     min-height: 500px;
     padding: 15px;
     margin-bottom: 7px;
@@ -117,5 +119,5 @@ img {
     /*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
     min-height: 50%;
     font-size: 16px;
-          border-style:solid;
+    border-style:solid;
   }
