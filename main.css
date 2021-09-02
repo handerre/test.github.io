@@ -15,9 +15,15 @@ body{
     @media only screen and (max-width: 680px) {
         body {
           background-color: green;
-         
         }
-        
+        main {
+          font-size: 10px;
+        }
+      }
+      @media only screen and (min-width: 681px) and (max-width: 900px) {
+        body {
+          background-color: red;
+        }
       }
 
 h1 {
@@ -45,14 +51,14 @@ main {
 img {
   width: 100%;
 }
-/* Definerer meny_topp taggen/griden*/
+
+/* Definerer meny_topp griden*/
 .meny_topp{
-	grid-column:span 4;
+	grid-column:span 7;
 	clear: both;
 	/*grid-auto-rows: minmax(20px, auto);*/
-    border-style: solid ;
+  border-style: solid ;
 	text-align: left;
-	font-size: 14px;
 	color: black;
 	padding: 10px;
 	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
