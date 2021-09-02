@@ -1,24 +1,41 @@
-<!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+  <!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
 <head> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
-  <title>Skjermtilpasning</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+  <title>Grids og skjermtilpasning</title> <!-- Tittel på HTML filen min i nettleservinduet-->
   <!-- Koblingen til .css filen (stilarket) mitt, og andre stilark, eksterne bibliotek, script, mm. - for at siden skal være mest mulig fleksibel og brukervennlig -->
   <link href="main.css" rel="stylesheet" type="text/css">
   <html lang="nb-NO"> <!-- Definerer norsk som språk - en del av universell utforming-->
   <meta charset="UTF-8"> <!-- Tagg for å bruke æ,ø og å-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
-<div class="main">
+<main>
+
+  <div class="meny_topp"> <!-- Toppmenyen min -->
+    &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
+    &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
+    &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
+    &#128279; <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+    &#128279; <a href="https://www.w3schools.com/sql/default.asp"target="_blank">SQL</a>
+    &#128279; <a href="https://www.w3schools.com/Php/default.asp" target="_blank">PHP</a>
+    &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
+    &#128279; <a href="https://www.raspberrypi.org"target="_blank">RaspberryPI</a>
+    &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
+    &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
+</div>
   <div class="header">
-    <h1>Eksempel på bruk av grids - column og hvordan nettsiden forandrer seg etter skjermstørrelse</h1>
+    <h1>Eksempel på bruk av grids-column, og hvor størrelsen tilpasser seg skjermen nettsiden vises på </h1>
 
   </div>
     
 
     <div class="hv1">  <!--horisontal grid del 2-->
       <p>Her er et bilde</p>      <img src="dreams.png" frameborder="0" allowfullscreen></img>
+      
+      <p>Så her kommer en kommentar om bildet. </p>
+      
+      <p> Kanskje bør jeg fortelle litt om hvorfor jeg har med dette bildet</p>
+     
     </div>
 
   <div class="hv2"> <!--horisontal grid del 3-->
@@ -40,7 +57,7 @@
          document.write(Date());
        </script>                
     </div>
-  </div>    
+  </main>    
 
 <!-- Slutt på body og HTML -->
 </body>
