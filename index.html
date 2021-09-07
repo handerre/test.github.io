@@ -1,6 +1,6 @@
   <!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
 <head> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
-  <title>Grids og skjermtilpasning</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+  <title>Dropdown-meny</title> <!-- Tittel på HTML filen min i nettleservinduet-->
   <!-- Koblingen til .css filen (stilarket) mitt, og andre stilark, eksterne bibliotek, script, mm. - for at siden skal være mest mulig fleksibel og brukervennlig -->
   <link href="main.css" rel="stylesheet" type="text/css">
   <html lang="nb-NO"> <!-- Definerer norsk som språk - en del av universell utforming-->
@@ -24,24 +24,82 @@
     &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
   </div>
 
-  <div class="header">
-    <h1>Eksempel på bruk av grids-column, og hvor størrelsen tilpasser seg skjermen nettsiden vises på </h1>
+  <div class="header"> <!-- header-griden min -->
+    <h1>Eksempel på bruk av dropdown-menyer </h1>
   </div>
     
-    <div class="hv1">  <!--horisontal grid del 2-->
-      <p>Her er et bilde</p>      <img src="dreams.png" frameborder="0" allowfullscreen></img>
+    <div class="dropdownmeny_H">  <!--horisontal grid del 1 = dropdown-meny som går horisontalt-->
+        <h2>Dropdown-meny horisontalt</h2>
+        <p>Menyen aktiveres når du holder musepekeren over knappen</p>
+        <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Mine oppgaver</button>
+            <div class="dropdown-content">
+            <a href="#">Raspberry PI</a>
+            <a href="#">Film om meg</a>
+            <a href="#">Hjemmenettverk</a>
+            </div>
+          </div>
+    
+          <div class="dropdown">
+            <button class="dropbtn">Noen supre kilder</button>
+            <div class="dropdown-content">
+            <a href="https://www.w3schools.com" target="blank">W3Schools</a>
+            <a href="https://www.google.com/">Min venn Google</a>
+            <a href="https://www.youtube.com">Youtube</a>
+           </div>
+          </div>
+         
+          <div class="dropdown">
+            <button class="dropbtn">Litt om alt </button>
+            <div class="dropdown-content">
+            <a href="#">En kul Film</a>
+            <a href="#">En kul låt</a>
+            </div>
+          </div>
+         </div>
+      </div>
+
+      <div class="dropdownmeny_V"> <!--horisontal grid del 2 - dropdownmeny som går vertikalt-->
+        <h2>Dropdown-meny vertikalt</h2>
+        <div class="navbar_V">
+        <div class="dropdown">
+            <button class="dropbtn">Mine oppgaver</button>
+            <div class="dropdown-content_V">
+            <a href="#">Raspberry PI</a>
+            <a href="#">Film om meg</a>
+            <a href="#">Hjemmenettverk</a>
+            </div>
+          </div>
+    
+          <div class="dropdown">
+            <button class="dropbtn">Noen supre kilder</button>
+            <div class="dropdown-content_V">
+            <a href="https://www.w3schools.com" target="blank">W3Schools</a>
+            <a href="https://www.google.com/">Min venn Google</a>
+            <a href="https://www.youtube.com">Youtube</a>
+           </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Litt om alt </button>
+            <div class="dropdown-content_V">
+            <a href="#">En kul Film</a>
+            <a href="#">En kul låt</a>
+            </div>
+          </div>
+         </div>
+        </div>
+
+  <div class="hv2"> <!--horisontal grid del 2-->
+    <p>Her er et bilde og tekst hvor alt er sentrert</p>      <img src="dreams.png" frameborder="0" allowfullscreen></img>
       
       <p>Så her kommer en kommentar om bildet. </p>
       
       <p> Kanskje bør jeg fortelle litt om hvorfor jeg har med dette bildet</p>
     </div>
 
-  <div class="hv2"> <!--horisontal grid del 3-->
-    <p>Her er et bilde</p>
-    <img src="dreams.png" frameborder="0" allowfullscreen></img>
-  </div>
 
-  <div class="hv3"> <!--horisontal grid del 4-->
+  <div class="hv3"> <!--horisontal grid del 3-->
     <p>Her er et bilde</p>    <img src="dreams.png" frameborder="0" allowfullscreen></img>
     </div>
 
