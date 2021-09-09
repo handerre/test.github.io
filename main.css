@@ -27,7 +27,25 @@ body{
         }
       }
 
+      #nedtelling_S{
 
+        grid-template-columns: span 3;
+        margin-top: 10px;
+        font-size: 14px;
+       
+        margin-right: 5px;
+    
+      }
+
+      #nedtelling_H{
+
+        grid-template-columns: span 3;
+        margin-top: 10px;
+        font-size: 14px;
+        
+        margin-right: 5px;
+       
+      }
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
 main {
 	display: grid; /* Definerer at sidene skal vises med grids*/
@@ -36,14 +54,16 @@ main {
 	text-align: center; /* all teks skal midtstilles som standard*/
 	grid-template-columns: repeat(6, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
   height: 100%; /* gjør at den dekker hele skjermen - uansett */
+  margin: -8px; /* Gjør at jeg ferner kanten som er rundt*/
+
 }
 /* Definerer header taggen/griden*/
 .header {
 	grid-column:span 7; /*Hvor mange av gridsene du skal bruke - horisontalt. Den er en mer enn antall grids (6), for å dekke hele skjermene*/
 	border-radius: 25px; /*Avrunnede hjørner */
-	border-style:dotted; /* Brukes bare mens jeg jobber - slik at jeg ser hvor tine er plassert*/
-	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
+  background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   text-align: center; /* teksten er midtstilt*/
+  padding-bottom: 20px;
 }
 
 /* Denne må brukes med andakt - da et bilde aldri skal være større en det som brukes. Rediger bildet først i eget program*/
@@ -55,11 +75,10 @@ img {
 .meny_topp{
 	grid-column:span 7; /*Hvor mange av gridsene du skal bruke - horisontalt. Den er en mer enn antall grids (6), for å dekke hele skjermene*/
 	clear: both;
-  border-style: solid; /* Brukes bare mens jeg jobber - slik at jeg ser hvor tine er plassert*/
-	text-align: left; /* Sørger for at den begynner på venstre side - da jeg i dette tilfellet bruker span 7 på grids-column*/
-	padding: 10px;
+	text-align: center; 
 	background-image: linear-gradient(to left,aqua #33b5e5); /* Standard syntax (must be last) - Gradient Background */
 	border-radius: 25px; /*Avrunnede hjørner */
+  margin: 10px;
 
 }
 .footer {
@@ -75,7 +94,6 @@ img {
 	grid-column:span 7; /*Hvor mange av gridsene du skal bruke - horisontalt. Den er en mer enn antall grids (6), for å dekke hele skjermene*/
 	opacity: 0.90; /* Gjør denne boksen litt gjennomsiktig*/
 	font-size: 10px; /*Skriftstørrelse*/
-  border-style: groove;
 }
 
 .dropdownmeny_H{
@@ -92,7 +110,7 @@ img {
   /*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   min-height: 50%;
   font-size: 16px;
-  border-style:dotted;
+
   }
 
 .dropdownmeny_V{
@@ -109,9 +127,7 @@ img {
   background-repeat:repeat;
   /*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   min-height: 50%;
-  font-size: 16px;
-  border-style:dotted;
-  
+  font-size: 16px; 
   }
 
 .hv2{
@@ -129,16 +145,15 @@ img {
   /*background-image: linear-gradient(to right, lightblue, #33b5e5); /* Standard syntax (must be last) - Gradient Background */
   min-height: 50%;
   font-size: 16px;
-  border-style:groove;
   }
 
   .hv3{
     grid-column: span 3;
     /*grid-row: auto;*/
     border-radius: 25px; /*Avrunnede hjørner */
-    display: inline;
     min-height: 500px; /*Minimumshøyde på elementet/boksen*/
     padding: 15px;
+  
     margin-bottom: 7px;
     margin-left: 15px;
     margin-right: 15px;
@@ -148,7 +163,24 @@ img {
     background-repeat:repeat;
     min-height: 50%;
     font-size: 16px;
-    border-style:solid;
+  }
+
+  .hv4{
+    grid-column: span 2;
+    /*grid-row: auto;*/
+    border-radius: 25px; /*Avrunnede hjørner */
+    min-height: 500px; /*Minimumshøyde på elementet/boksen*/
+    padding: 15px;
+  
+    margin-bottom: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color:black;
+    text-align: left;
+    /*opacity: 0.5; /*gjennomsiktighet/tydelighet*/
+    background-repeat:repeat;
+    min-height: 50%;
+    font-size: 16px;
   }
 
   /* Knapp for dropdownmeny*/
@@ -166,13 +198,11 @@ img {
   /* Er elementet som inneholder knapp og meny - Her det horisontale*/
   .navbar{
   overflow:hidden;
-  background-color:coral;
 }
 
  /* Er elementet som inneholder knapp og meny - her det vertikale*/
 .navbar_V{
   overflow:hidden;
-  background-color:coral;
   max-width: 300px;
 
 }
