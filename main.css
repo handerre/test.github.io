@@ -31,8 +31,8 @@ body{
 
         grid-template-columns: span 3;
         margin-top: 10px;
-        font-size: 14px;
-       
+        font-size: 16px;
+        grid-row: span 2;
         margin-right: 5px;
     
       }
@@ -41,8 +41,36 @@ body{
 
         grid-template-columns: span 3;
         margin-top: 10px;
-        font-size: 14px;
-        
+        font-size: 16px;
+        grid-row: span 2;
+        margin-right: 5px;
+       
+      }
+
+      #nedtelling_J{
+
+        grid-template-columns: span 3;
+        margin-top: 10px;
+        font-size: 16px;
+        grid-row: span 2;
+        margin-right: 5px;
+       
+      }
+      #nedtelling_P{
+
+        grid-template-columns: span 3;
+        margin-top: 10px;
+        font-size: 16px;
+        grid-row: span 2;
+        margin-right: 5px;
+       
+      }
+      #nedtelling_V{
+
+        grid-template-columns: span 3;
+        margin-top: 10px;
+        font-size: 16px;
+        grid-row: span 2;
         margin-right: 5px;
        
       }
@@ -53,6 +81,7 @@ main {
 	grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
 	text-align: center; /* all teks skal midtstilles som standard*/
 	grid-template-columns: repeat(6, 1fr); /* deler skjermen i 5 like store deler - horisontalt */
+  
   height: 100%; /* gjør at den dekker hele skjermen - uansett */
   margin: -8px; /* Gjør at jeg ferner kanten som er rundt*/
 
@@ -149,11 +178,11 @@ img {
 
   .hv3{
     grid-column: span 3;
-    /*grid-row: auto;*/
+    
     border-radius: 25px; /*Avrunnede hjørner */
     min-height: 500px; /*Minimumshøyde på elementet/boksen*/
     padding: 15px;
-  
+    grid-template-rows: repeat(6, 1fr);
     margin-bottom: 7px;
     margin-left: 15px;
     margin-right: 15px;
