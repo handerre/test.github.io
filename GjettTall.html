@@ -1,0 +1,126 @@
+  <!DOCTYPE html> <!-- Holder med referanse i hht HTML5 standard -->
+<head> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
+  <title>JavaScript</title> <!-- Tittel på HTML filen min i nettleservinduet-->
+  <!-- Koblingen til .css filen (stilarket) mitt, og andre stilark, eksterne bibliotek, script, mm. - for at siden skal være mest mulig fleksibel og brukervennlig -->
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <html lang="nb-NO"> <!-- Definerer norsk som språk - en del av universell utforming-->
+  <meta charset="UTF-8"> <!-- Tagg for å bruke æ,ø og å-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  
+</head>
+
+<body> <!-- Hode, naturlig del av HTML, standarden. Brukes til overordnet informasjon, koblinger mm -->
+<main>
+
+  <div class="meny_topp"> <!-- Toppmenyen min -->
+    &#128279; <a href="http://www.youtube.com/channel/UCFB7G96aSKQjiRxnOyjffuQ"target="_blank">Youtube</a>
+    &#128279; <a href="https://www.w3schools.com/html/default.asp"target="_blank">HTML</a>
+    &#128279; <a href="https://www.w3schools.com/css/default.asp"target="_blank">CSS</a>
+    &#128279; <a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a>
+    &#128279; <a href="https://www.w3schools.com/sql/default.asp"target="_blank">SQL</a>
+    &#128279; <a href="https://www.w3schools.com/Php/default.asp" target="_blank">PHP</a>
+    &#128279; <a href="https://microbit.org"target="_blank">Microbit</a>
+    &#128279; <a href="https://www.raspberrypi.org"target="_blank">RaspberryPI</a>
+    &#128279; <a href="https://scratch.mit.edu"target="_blank">Scratch</a>
+    &#128279; <a href="https://ff.ndla.no/subjects/subject:f248e20c-3131-495e-a759-c71678430d5f?fbclid=IwAR2hesczpV9Ul4mkZcQBlXHamfPphH17lub0oDktza0VXdWvw1VwNJTG-9I" target="_blank">NDLA</a>
+  </div>
+
+  <div class="header"> <!-- header-griden min -->
+    <h1>Mitt eksempel </h1>
+    JavaScript
+  </div>
+    
+    <div class="dropdownmeny_H">  <!--horisontal grid del 1 = dropdown-meny som går horisontalt-->
+        <h2>Dropdown-meny horisontalt</h2>
+        <p>Menyen aktiveres når du holder musepekeren over knappen</p>
+        <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Mine oppgaver</button>
+            <div class="dropdown-content">
+            <a href="#">Raspberry PI</a>
+            <a href="#">Film om meg</a>
+            <a href="#">Hjemmenettverk</a>
+            </div>
+          </div>
+    
+          <div class="dropdown">
+            <button class="dropbtn">Noen supre kilder</button>
+            <div class="dropdown-content">
+            <a href="https://www.w3schools.com" target="blank">W3Schools</a>
+            <a href="https://www.google.com/">Min venn Google</a>
+            <a href="https://www.youtube.com">Youtube</a>
+           </div>
+          </div>
+         
+          <div class="dropdown">
+            <button class="dropbtn">Litt om alt </button>
+            <div class="dropdown-content">
+            <a href="#">En kul Film</a>
+            <a href="#">En kul låt</a>
+            </div>
+          </div>
+         </div>
+      </div>
+
+ 
+    
+     
+
+        <div class="hv4"> <!--horisontal grid del 2-->
+          <p>Pseudokode</p>   
+          <li>Programmet velge et tilfeldig tall (math.random).</li> 
+          <br>
+          <li>Bruker skriver inn et tall mellom 1 - 100.</li>
+          <br>
+          <li>Bruker trykker på knapp (gjett) slik at tallet til bruker registeres som input. Antall muligheter bruker har er 10</li> 
+          <br>
+          <li>Programmet sammenligner tilfeldig tall og bruker sitt tall (math.floor).</li> 
+          <br>
+          <li>Programmet returerner et av fire følgende svar:</li>
+          <ul class="d">
+          <li>Enten riktig</li>
+          <br>
+          <li>Eller for lavt</li>
+          <br>
+          <li>eller for høyt</li>
+          <br>
+          <li>eller antall forsøk (10) er gjennomført</li>
+          </ul>
+          
+          </div>
+
+  <div class="hv2"> <!--horisontal grid del 2-->
+    <p>Her er knappen for å spille</p>   
+    <p>Gjett på et tall mellom 0-100: <input type="text" id="txtTall" /> <br>
+    <button id="btnGjett">Gjett</button></p> 
+    
+    </div>
+    
+
+  <div class="hv3"> <!--horisontal grid del 3-->
+    <p><b>Her vises resultatet</b></p>    
+    
+    <div id="graf"> <!-- Script for å gjette hemmelig tall-->
+      <script src="GjettTall.js"></script>
+      <p id="melding"> </p> 
+    </div>
+    
+  
+    </div>
+      <div class="footer"> <!--Footer -->
+      <p>Copyright &copy; 2020 </p>
+     <script>
+       document.write(Year());
+     </script>
+       Dagens dato: 
+       <script>
+         document.write(Date());
+       </script>
+                  
+    </div>
+  </main>    
+
+<!-- Slutt på body og HTML -->
+</body>
+</html>
