@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id ="bokser"></div>
+<div id ="brikker"></div>
+<p id ="antall">0</p>
+
+<style>
+
+.boks {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.brikke {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+</style>
+    
+<script>
+
+window.onload = oppstart;
+
+ var farger = ["green", "red", "yellow", "blue"];
+ var brikkeTeller = 1;
+ var intervallID;
+ var antall = 0;
+ var slutt = false;
+ var maksAntall = 20;
+
+ function oppstart() {
+     for (var i = 0; i < farger.length; i++) {
+         var boks = document.createElement("span");
+         boks.className = "boks";
+         boks.style.backgroundColor = farger[i];
+         boks.ondrop = slipp;
+         boks.ondragover = tillat;
+         document.getElementById("bokser").appendChild(boks);
+     }
+     intervallID = setInterval(lagElement, 500);
+ }
+
+ function lagElement() {
+     var brikke = document.createElement ("span");
+     brikke.className = "brikke";
+
+     brikke.style.backgroundColor =
+        farger[Math.floor(Math.random() * farger.length)];
+    brikke.draggable = true;
+    brikke.ondragstart = dra;
+    brikke.id ="brikke" + brikkeTeller;
+    brikkeTeller++;
+    document.getElementById("brikker").appendChild(brikke);
+
+    if (document.getElementById("brikker").children.length > maksAntall) {
+        alert("Du tapte med " + antall + "poeng");
+        clearInterval(intervallID);
+        slutt = true;
+    }
+ }
+
+ function dra(evt){
+     evt.dataTransfer.setData("text", evt.target.id);
+ }
+
+ function slipp(evt) {
+     if (slutt === true){
+         return;
+     }
+     evt.preventDefault();
+     var elementId = evt.dataTransfer.getData("text");
+
+     if(evt.target.style.backgroundColor ===
+        document.getElementById(elementId).style.backgroundColor) {
+        document.getElementById(elementId).ondragstart = null;
+
+        document.getElementById("brikker").removeChild
+            (document.getElementById(elementId));
+        antall++;
+        document.getElementById("antall").innerHTML = antall;
+    }
+ }
+
+ function tillat(evt) {
+     evt.preventDefault();
+ }
+</script>
+</body>
+</html>
